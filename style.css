@@ -1,0 +1,348 @@
+/* css reset i font */
+* {
+	margin: 0;
+	padding: 0;
+}
+html, body{
+	height: 100%;
+    max-width: 100%;
+    font-size: 20px;
+    font-family: 'Roboto', sans-serif;
+}
+
+/* css reset i font */
+
+body{
+    background-color: lightgray;
+}
+
+.container{
+    width: 35rem;
+    height: auto;
+    margin: auto;
+    margin-top: 4rem;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.container > h2, p{
+    padding: 1.5rem;
+    text-align: center;
+}
+h2{
+    font-weight: 300;
+}
+p{
+    font-weight: 200;
+    font-size: 15px;
+}
+
+.wraper{
+    width: auto;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    margin: auto;
+}
+
+.iconBox{
+    width: 10rem;
+    height: 10rem;
+    border-right: 1px solid black;
+    border-bottom: 1px solid black;
+    border-left: transparent;
+    border-top: transparent;
+    /* position: relative; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.desno{
+    border-right: transparent;
+}
+.dole{
+    border-bottom: transparent;
+}
+
+
+
+.linija{
+    height: 6px;
+    width: 3.5rem;
+    background-color: black;
+    margin: 0.5rem auto;
+}
+
+i{
+    border: solid black;
+    border-width: 0 6px 6px 0;
+    display: block;
+    height: 2rem;
+    width: 2rem;
+}
+.strelicaDesno{
+    transform: rotate(-45deg);
+}
+
+
+#iks{
+    width: 4.5rem;
+}
+.x{
+    position: absolute;
+    width: 4.5rem;
+    height: 0.30rem;
+    background-color: transparent;
+}
+.x::before , .x::after{
+    content: '';
+    position: absolute;
+    width: inherit;
+    height: inherit;
+    background-color: black;
+}
+.x::before{
+    transform: rotate(-45deg);
+}
+.x::after{
+    transform: rotate(45deg);
+}
+
+#drugi{
+    margin: 0 auto;
+}
+
+#lupaWrap{
+    width: 5.5rem;
+    height: 5.5rem;
+}
+.lupa{
+ font-size: 7rem; 
+ display: inline-block;
+ width: 0.4em;
+ height: 0.4em;
+ border: 0.06em solid black;
+ position: relative;
+ border-radius: 50%;
+ bottom: -15px;
+}
+.lupa::before{
+ content: "";
+ display: inline-block;
+ position: absolute;
+ right: -0.25em;
+ bottom: -0.1em;
+ border-width: 0;
+ background: black;
+ width: 0.30em;
+ height: 0.06em;
+ transform: rotate(45deg);
+}
+
+#home{
+    height: 5.5rem;
+    width: 5.5rem;
+}
+.kucaBaza{
+    background: black;
+    display: inline-block;
+    height: 2.75rem;
+    margin-left: 1rem;
+    margin-top: 1rem;
+    position: relative;
+    width: 3.5rem;
+    bottom: -1.5rem;
+  }
+  .kucaBaza:before {
+    border-bottom: 1.75rem solid black;
+    border-left: 2.5rem solid transparent;
+    border-right: 2.5rem solid transparent;
+    content: "";
+    height: 0;
+    left: -0.75rem;
+    position: absolute;
+    top: -1.75rem;
+    width: 0;
+  }
+  .vrata{
+      background-color: white;
+      height: 1rem;
+      width: 0.75rem;
+      margin-top: 1.75rem;
+      margin-left: 1.35rem;
+  }
+
+  .kocka{
+      width: 5rem;
+      height: 5rem;
+      display: flex;
+      position: relative;
+      border: 0;
+      overflow: hidden;
+  }
+  .kocka > div{
+      background: #000;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 5rem;
+      height: 7.5rem;
+      position: absolute;
+      top: -1.25rem;
+      transform: rotate(45deg);
+  }
+  .kocka > div > div{
+      width: 5rem;
+      height: 5rem;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      position: relative;
+      transform: rotate(-45deg);
+  }
+  .kocka > div > div > div{
+      /* display: block; */
+      background: white;
+      width: 2px;
+      height: 3.5rem;
+      position: absolute;
+  }
+  .kocka > div > div > div:nth-child(1){
+      right: 1.35rem;
+      top: 1.30rem;
+  }
+  .kocka > div > div > div:nth-child(2){
+      width: 3.5rem;
+      height: 2px;
+      top: 1.30rem;
+      left: 2px;
+  }
+  .kocka > div > div > div:nth-child(3){
+      transform: rotate(45deg);
+      top: 1px;
+      right: 0.75rem;
+      height: 1.5rem;
+
+  }
+
+
+#kocke{
+    margin: 35% 35%;
+}
+.red{
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+}
+.kockica, .kockicaCrna{
+    width: 0.90rem;
+    height: 0.90rem;
+}
+.kockicaCrna{
+    background-color: black;
+}
+#poslednja{
+    transform: rotate(45deg);
+}
+
+#srceWrap{
+    height: 4.5rem;
+}
+  .srce{
+    position: relative;
+    width: 5rem;
+    height: 4.5rem;
+    margin-left: 0.5rem;
+  }
+  .srce:before,
+ .srce:after {
+    position: absolute;
+    content: "";
+    left: 2.5rem;
+    top: 0.25rem;
+    width: 2.5rem;
+    height: 4rem;
+    background: black;
+    border-radius: 2.5rem 2.5rem 0 0;
+    transform: rotate(-45deg);
+    transform-origin: 0 100%;
+  }
+  .srce:after {
+    left: 0;
+    transform: rotate(45deg);
+    transform-origin: 100% 100%;
+  }
+
+
+#oblak{
+    width: 6rem;
+    height: 3rem;
+    display: flex;
+    flex-direction: row;
+    position: relative;
+}
+
+.osnova{
+    width: 5rem;
+    height: 1.5rem;
+    background-color: black;
+    position: absolute;
+    margin-top: 1.25rem;
+    border-radius: 2rem;
+    
+}
+
+.oblak1{
+    height: 2rem;
+    width: 2rem;
+    border-radius: 50%;
+    background-color: black;
+    position: absolute;
+    margin-top: 0.75rem;
+}
+.oblak2{
+    height: 2.75rem;
+    width: 2.5rem;
+    border-radius: 50%;
+    background-color: black;
+    position: absolute;
+    margin-left: 1.5rem;
+}
+.oblak3{
+    height: 2rem;
+    width: 2rem;
+    border-radius: 50%;
+    background-color: black;
+    position: absolute;
+    margin-left: 3.5rem;
+    margin-top: 0.75rem;
+}
+
+
+@media (max-width: 992px){
+    html, body{
+        height: 100%;
+        max-width: 100%;
+        font-size: 18px;
+    }
+}
+@media (max-width: 768px){
+    html, body{
+        height: 100%;
+        max-width: 100%;
+        font-size: 16px;
+    }
+}
+@media (max-width: 576px){
+    html, body{
+        height: 100%;
+        max-width: 100%;
+        font-size: 13px;
+    }
+}
+
+
